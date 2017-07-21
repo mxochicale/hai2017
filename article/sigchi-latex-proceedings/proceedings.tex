@@ -5,7 +5,7 @@
 % copyright statement.
 
 % Copyright
-\CopyrightYear{2016}
+\CopyrightYear{2017}
 %\setcopyright{acmcopyright}
 \setcopyright{acmlicensed}
 %\setcopyright{rightsretained}
@@ -77,7 +77,7 @@
 % re-using, if desired).  Use \emtpyauthor when submitting for review
 % so you remain anonymous.
 % \def\plaintitle{SIGCHI Conference Proceedings Format}
-\def\plaintitle{...Movement Variability in Human-Humanoid Imitation}
+\def\plaintitle{Towards the Analysis of Movement Variability in Human-Humanoid Imitation Activities}
 
 \def\plainauthor{First Author, Second Author, Third Author,
   Fourth Author, Fifth Author, Sixth Author}
@@ -158,25 +158,24 @@
   ...
 \end{abstract}
 
-\category{H.5.m.}{Information Interfaces and Presentation
-  (e.g. HCI)}{Miscellaneous} \category{See
-  \url{http://acm.org/about/class/1998/} for the full list of ACM
-  classifiers. This section is required.}{}{}
+\category{I.2.9.}{Robotics}{Sensors}
+\category{G.3.}{PROBABILITY AND STATISTICS}{Time series analysis}
+% \category{I.5.4.}{Applications}{Signal Progessing}
 
 % \keywords{\plainkeywords}
-\keywords{Human-Humanoid Interaction; Human-Robot Interaction; Wearable Inertial Sensors; State Space Reconstruction}
+\keywords{Human-Robot Interaction; Human-Humanoid Imitation;
+Wearable Inertial Sensors; State Space Reconstruction}
 
 
 \section{Introduction}
 
 Movement variability is an inherent feature within a person and between persons
 \cite{newell1993variability}. Recently, Herzfeld et al. \cite{Herzfeld2014}
-conducted experiments to argue that movement variability is not only noise but a
-source of movement exploration which at certaing point is becoming a source
-of movement explotation.
+conducted experiments to state that movement variability is not only noise but a
+source of movement exploration which at certaing point of the movement performance
+such variability is a source of movement explotation.
 With this in mind, we have found that there is little research in the area of
 human-robot interaction that is focused on the quantification of movemennt variablity.
-
 
 
 %
@@ -197,67 +196,49 @@ human-robot interaction that is focused on the quantification of movemennt varia
 % which is the ability of
 
 
-...I AM READING THESE PAPERS TO COMPLETE THE INTRODUCTION:
-Perception of Human Motion \cite{Blake2007}.
-Pigeons and humans use action and pose information to categorize complex human behaviors
-\cite{Qadri201716}. The visual perception of velocity \cite{Brown1931}.
-Implied Dynamics Biases the Visual Perception of Velocity \cite{LaScaleia2014}.
-Attention to body-parts varies with visual preference and verb--effector associations \cite{Boyer2017}.
-Comparing Biological Motion Perception in Two Distinct Human Societies \cite{Pica2011}
-
-% Motion perception: from phi to omega \cite{Rose967}
+% ...I AM READING THESE PAPERS TO COMPLETE THE INTRODUCTION:
+% Perception of Human Motion \cite{Blake2007}.
+% Pigeons and humans use action and pose information to categorize complex human behaviors
+% \cite{Qadri201716}. The visual perception of velocity \cite{Brown1931}.
+% Implied Dynamics Biases the Visual Perception of Velocity \cite{LaScaleia2014}.
+% Attention to body-parts varies with visual preference and verb--effector associations \cite{Boyer2017}.
+% Comparing Biological Motion Perception in Two Distinct Human Societies \cite{Pica2011}
+% % Motion perception: from phi to omega \cite{Rose967}
 
 \section{METHOD}
 
-\subsection{Reconstructed State Space}
+\subsection{State Space Reconstruction}
 In this work we follow the notation employed in \cite{Uzal2011}.
 The purpose of time-delay embedding, also known as Takens's Theorem,
 is to reconstruct the topological properties of an unknown $M-$dimensional
 state space $s(t)$ from a $1-$dimensional measurement $x(t)$ in order to
-reconstruct an $N-$dimensional embedding space.
-The time-delay embedding assumes that the time series is a sequence $x(t)=h(s(t))$,
-where $h: S \rightarrow \mathbb{R}^M$ is a measurement function on the unknown
-dynamical system, being $x(t)$ observable (Figure \ref{fig:takens_theorem}).
-
+reconstruct an $N-$dimensional embedding space (Figure \ref{fig:takens_theorem}).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.45\textwidth]{figures/reconstructed_state_space/fig}
-\caption[PA]{A. $M-$dimensional complex system $s(t)$; B. $1-$dimensional measurament
-$x(t)$; and  C. $N-$dimensional complex system $v(t)$ where $M \geq N $}
+\caption[PA]{A. $M-$dimensional state space $s(t)$; B. $1-$dimensional measurament
+time series $x(t)$; and  C. $N-$dimensional reconstructed state space $v(t)$ where $M \geq N$
+\cite{QuintanaDuque2012}.}
 \label{fig:takens_theorem}
 \end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The time-delay embedding assumes that the time series is a sequence $x(t)=h(s(t))$,
+where $h: S \rightarrow \mathbb{R}^M$ is a measurement function on the unknown
+dynamical system, being $x(t)$ observable.
 Thus, the time delay reconstruction in $m$ dimensions with a time delay
-$\tau$ is defined as:
-$\overline{x}(t) = (x(t), x(t-\tau),...,x(t-(m-1)\tau))$.
-% which defines a map
-% $\varPhi: S \rightarrow \mathbb{R}^m$ such that $\overline{x}(t) = \varPhi(s)$.
-% $\varPsi: \mathbb{R}^m \rightarrow \mathbb{R}^n$ is
-Then a further transformation can be considered
-% as a more general transformation
-in order to reduce
-% the dimensionality of
-the $m-$dimensional time-delay embedding.
-For this work, we assume that the signal, $x(t)$, we are observing has been
-produced by some time-varying system (that is the human body movement).
- % rather than been generated entirely at random.
-The assumption that the source of the signal exhibits systematic variation
-leads to the assumption that this signal should, over some time period,
-exhibit a repeated pattern. What we do not know is what this time period might
-be or what this repeated pattern might look like.
-
-
-%
-% In our work the sequence $x(t)$ is the raw data collected from an (IMU)
-% for triaxial data for accelerometer ($a_{ \{ x,y,z \} }$),
-% gyroscope ($g_{ \{ x,y,z \} }$) and magnetometer($m_{ \{ x,y,z \} }$) sensors.
-% Then, for instance, the time-series $a_x$ with a length of
-% $N$ samples is used to obtain the Time-delay embedded matrix,
-% $\boldsymbol{E} a_{x}$, with $m$ rows and $N-(m-1)\tau$ columns.
-% Finally, the PCA algorithm is applied so as to obtain via eigenvalues
-% ($\lambda_1,\ldots,\lambda_m$), eigenvectors ($v_1,\ldots,v_m$) and
-% the principal components
-% ($PC_1,\ldots,PC_m$) of the time-delay embedded phase space.
+$\tau$ is defined as: $\overline{x}(t) = (x(t), x(t-\tau),...,x(t-(m-1)\tau))$.
+Then a further transformation is considered in order to reduce
+the dimensionality of the $m-$dimensional reconstructed state space.
+For this work, we assume that the signal, $x(t)$, is produced by some time-varying
+system which is the time series produced by the linear acceleration of the
+inertial sensors attached to both the person and the humanoid robot.
+The assumption that the source of the signal exhibits systematic variability
+within and between persons leads to the assumption that this signal should,
+over some time period, exhibit a repeated pattern between and within persons.
+What we do not know is how realiable the quantification methods for movement
+variability are and how to establish levels of imitation with a given
+movement variability.
 
 
 
@@ -268,32 +249,25 @@ some problems are still remaining to be solved.
 Sama et al. \cite{Sama2013} estimated that the minimal embedded
 dimension ($m_{min}$) with False Nearest Neighbours (FNN) method.
 However, Cao \cite{Cao1997} pointed out that FNN algorithm
-introduces new parameters ($R_{tol}$ and $A_{tol}$) that lead
-%is subject to different threshold parameters   which lead
-to different results which cannot differentiate random series from
-deterministic series.
-Frank et al. \cite{Frank2010} proposed a grid search method to find the minimal
-embedded parameters, but there are little details about their approach.
+introduces two parameters ($R_{tol}$ and $A_{tol}$) that lead
+to different results when distinguishing random series from deterministic series.
 Additionally, Sama et al. \cite{Sama2013} states that the minimal embedding
-parameters largely depend on the
-application at hand. Thus, there is still research to be done to find the
-minimal dimension parameters ($m_{min}$ and $\tau_{min}$)
+parameters largely depend on the structure (amplitude, frequency, nonlinearity)
+of the time series. Thus, there is still research to be done to find
+optimus values of the minimal dimension parameters ($m_{min}$ and $\tau_{min}$)
 to reconstruct the state space.
 
 % \newpage
 \subsection{$E1(d)$ and $E2(d)$ values}
-Cao's method for computing the minimal embedding dimension is based on the
-mean values of $E1(d)$ and $E2(d)$ where $d$ is the range of evaluation of the
-embedding dimension. Therefore, $E1(d)$ is used to obtain the minimal
-dimension $m_{min}$ to which the values of $E1(d)$ stop changing when
- $d$ comes from an attractor. $E2(d)$ values are used to distinguish
- deterministic signals from random signals in which case the $E2(d)$
- values will be approximately equal to 1 for any $d$.
+In this work, we follow the Cao's method \cite{Cao1997} to compute the minimal
+embedding dimension. Cao's method is based on the mean values of $E1(d)$ and $E2(d)$
+where $d$ is the range of evaluation for the embedding dimension.
+Therefore, $E1(d)$ is used to obtain the minimal dimension $m_{min}$
+where the values of $E1(d)$ stop changing when $d$ comes from an attractor.
+$E2(d)$ values are used to distinguish deterministic signals from random signals
+in which case the $E2(d)$ values will be approximately equal to 1 for any $d$.
 Cao's method is a modified version of the FNN method, and $E1(d)$ and $E2(d)$
-values are only dependant on $m$ and $\tau$ \cite{Cao1997}.
-% Figures~\ref{fig:e1e2} illustrate our application of this approach,
-% which is described in more detail in the Estimation of the Minimal
-% Embedded Parameters section.
+values are only dependant on $m$ and $\tau$ .
 
 
 \section{Experiment Design}
@@ -321,47 +295,28 @@ Additionally, OpenFace can operate with a simple webcam in real-time
 \subsection{Hyphothesis}
 In our previous experiments of a face-to-face human-humanoid imitation
 activity \cite{XXX2017} where we proposed metrics to quantify the level of
-imitation, we also observed (by eye) that efects like boredoom, fatigue or
-level of engagment might also be a factor that influence
-the way each person moves and therefore movement variability.
+imitation for upper arm movements, we also observed (by eye) that efects
+like boredoom, fatigue or level of engagment might also be a factor that
+influence the way each vary beetween persons and within person.
 With this in mind, we hyphothesised that not only inertial sensors attached
 to the body can provide information about movement variability
-but also the head pose estimation which, we believe, will lead us to get better
-understanding movement variability and therefore create
+but also the head pose estimation which, we believe, will lead us to get
+better understanding movement variability and therefore create more
 realiable metrics to measure such variability.
 
-
 \subsection{Participants and Procedure}
-For our pilot experiment, we only collected data for one male right-handed healthy
-participant  (age 35, height 177cm, weight 85kg).
-% and one female (age 25, height 150cm, weight 43).
+In this experiment, we only collected data for eigth male right-handed healthy
+participant  (age 22+-1) and ten  female (age 25 +-1).
 Besides the inertial sensors attached to both the participant and the robot,
 we use the head pose estimation via webcam in order to test our previous hyphothesis.
-% that can lead us to understand how to estimate leves of engagement, boredoom or fatigue.
-For this, we designed a pilot experiment where the user(s) imitate NAO robot' arm
-movements at three speeds:
-(a) 15 frames per seconds;
-(b) 30 frames per seconds;
-(c) and 45 frames per seconds.
-Such experiment were performed for six times by the same participant
+For this, we designed an experiment where the user(s) imitate NAO robot' arm
+movements at a constant speed of 30 frames per seconds.
+Such experiment were performed for ten times by the same participant
 in order to test the factor of fatigue or boredoom (Figure~\ref{fig:exp}A ).
 
-% (a) moving both arms at different speeds for short and prolonged times
-% (b) moving arms alternate
-% (c) either (a) or (b) with music
-
-% With this in mind, w
 We use OpenFace \cite{Baltrusaitis2016} to measure the head pose which
  let us hyphothesis that the participant is engagaed
 when he/she stared the robots within certain range of movements.
-
-% Regarding the factor of fatigue, we vary the time lenght of the performed activity
-% for each of the sceneraios.
-% and the similarity of movements
-
-
-% Experiment set up (Figure~\ref{fig:exp}A )
-
 
 
 \begin{figure}[!htb]
@@ -374,47 +329,52 @@ B. Head pose estimation with OpenFace \cite{Baltrusaitis2016}
 \end{figure}
 
 
+\subsection{Head Pose Estimation}
+
+
+
+\subsection{Accelerometer}
+In this work the sequence $x(t)$ is the raw data collected from an (IMU)
+for triaxial data for accelerometer ($a_{ \{ x,y,z \} }$),
+gyroscope ($g_{ \{ x,y,z \} }$) and magnetometer($m_{ \{ x,y,z \} }$) sensors.
+Then, for instance, the time-series $a_x$ with a length of
+$N$ samples is used to obtain the Time-delay embedded matrix,
+$\boldsymbol{E} a_{x}$, with $m$ rows and $N-(m-1)\tau$ columns.
+Finally, the PCA algorithm is applied so as to obtain via eigenvalues
+($\lambda_1,\ldots,\lambda_m$), eigenvectors ($v_1,\ldots,v_m$) and
+the principal components
+($PC_1,\ldots,PC_m$) of the time-delay embedded phase space.
+
+
+
+
 \section{Results}
-I AM WORKING IN THIS SECTION WHERE I WILL PRESENT THE RESULTS OF
-ONE PARTICIPANT PERFORMING THE ARM MOVEMENTS FOR SIX TRIALS
-AT SPEEDS OF 15, 30 and 45 USING THE DATA FROM THE IMUS AND THE HEAD POSE
-ESTIMATOR (Figures~\ref{fig:hpe} and \ref{fig:imus}).
 
-
+In Figure~\ref{fig:pose}, we can observe that particpant 04, 08 and 17
+present an oscillation in the head which is an unpected behaviour since
+NAO was static.
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.45\textwidth]{figures/results/hpe}
-\caption[PA]{Head Pose Estimation of six trials at three speeds 15, 30 and 45}
-\label{fig:hpe}
+\includegraphics[width=0.45\textwidth]{figures/results/Tx}
+\caption[PA]{Head Pose Estimation in the Tx axis for 18 participants}
+\label{fig:pose}
 \end{figure}
 
 
-
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=0.45\textwidth]{figures/results/imus}
-\caption[PA]{Right Arm (RA) and Left Arm (LA) from Human and robot arm movememtns
-of six trials at three speeds 15, 30 and 45}
-\label{fig:imus}
-\end{figure}
-
-
-
+* I am analising the data for the previos time-series as well as the
+data from the IMUS for the robot and the persons.
 
 
 
 \section{Conclusion}
 
-
-
 In future experiments, there are three areas that we intend to investigate:
 (a) provide further understanding of human movement variablity
-(b) two-humans to one-humanoid and
-(c) three-humans to one-humanoid interactions.
-
-% (b) data collection from a wider range of individuals (differing gender, age and state of health)
-% and from additional inertial sensors attached to the body;
-% (ii) exploration of complex movements which can be performed by both persons and NAO;
+(b) perform experiments of interaction with two-humans to one-humanoid and
+ three-humans to one-humanoid interactions.
+(c) exploration of complex movements which can be performed by both persons and NAO;
+(d) data collection from a wider range of individuals (differing gender, age and state of health)
+ and from additional inertial sensors attached to the body.
 
 
 
@@ -449,12 +409,7 @@ shape to the scientific value of knowledge of my research endevours.
 %
 % Or, just remove \balance and give up on balancing the last page.
 %
-\balance{}
-
-\section{References Format}
-
-References should be in ACM citation format:
-\url{http://www.acm.org/publications/submissions/latex_style}.
+% \balance{}
 
 
 % BALANCE COLUMNS
