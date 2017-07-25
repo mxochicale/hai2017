@@ -151,20 +151,20 @@
 \maketitle
 
 \begin{abstract}
-  In this paper, we present prelimary results for the analysis of movement
+  In this paper, we present preliminary results for the analysis of movement
   variability in order to quantify face-to-face human-humanoid imitation activities.
   We applied the state space reconstruction's theorem to test our
-  hyphothesis where participants, even performing the same arm movement,
-  presented minor diferences in the way they moved.
+  hypothesis where participants, even performing the same arm movement,
+  presented minor difference in the way they moved.
   With this in mind, we asked eighteen participants to copy NAO's arm
   movements while we collected data from inertial sensors attached to the participants' wrist
   and compute the head pose estimation using the OpenFace framework.
-  With the proposed metric, we found that two particpants were moving their arms
-  asymetrically while the others move their arms, within a range of movement
-  variability, symetrically. We also showed that two participants where moving
+  With the proposed metric, we found that two participants were moving their arms
+  asymmetrically while the others move their arms, within a range of movement
+  variability, symmetrically. We also showed that two participants where moving
   their head even when NAO's head was static.
-  Althought the work is in its early stage, the results are promising for
-  applications in rehabilitation, sport science, enternatiment or education.
+  Although the work is in its early stage, the results are promising for
+  applications in rehabilitation, sport science, entertainment or education.
 \end{abstract}
 
 \category{I.2.9.}{Robotics}{Sensors}
@@ -182,10 +182,10 @@ Dynamics Invariants}
 Movement variability is an inherent feature within a person and between persons
 \cite{newell1993variability}. Recently, Herzfeld et al. \cite{Herzfeld2014}
 conducted experiments to state that movement variability is not only noise but a
-source of movement exploration which at certaing point of the exploration
-such variability is a source of movement explotation.
+source of movement exploration which at certain point of the exploration
+such variability is a source of movement exploration.
 With this in mind, we have found that there is little research in the area of
-human-robot interaction that is focused on the quantification of movement variablity.
+human-robot interaction that is focused on the quantification of movement variability.
 
 
 % Implied Dynamics Biases the Visual Perception of Velocity \cite{LaScaleia2014}.
@@ -204,7 +204,7 @@ reconstruct an $N-$dimensional embedding space (Figure \ref{fig:takens_theorem})
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.45\textwidth]{figures/reconstructed_state_space/fig}
-\caption[PA]{A. $M-$dimensional state space $s(t)$; B. $1-$dimensional measurament
+\caption[PA]{A. $M-$dimensional state space $s(t)$; B. $1-$dimensional measurement
 time series $x(t)$; and  C. $N-$dimensional reconstructed state space $v(t)$ where $M \geq N$
 \cite{QuintanaDuque2012}.}
 \label{fig:takens_theorem}
@@ -223,7 +223,7 @@ the inertial sensors.
 The assumption that the signal exhibits systematic variability within and between
 persons leads to the assumption that this signal should, over some time period,
 exhibit a repeated pattern between and within persons. What we do not know is
-how realiable the quantification methods for movement variability are and how
+how reliable the quantification methods for movement variability are and how
 to establish levels of imitation with a given range of movement variability.
 
 
@@ -249,10 +249,10 @@ using ROS \cite{quigley2009} (Figure~\ref{fig:exp}A).
 \subsection{Time Series from the Accelerometer}
 The sequence $a(n)$ is the raw data collected from an triaxial accelerometer sensor
 ($a_{ \{ x,y,z \} }$). Then, for instance, the time-series $a_x(n)$
-with a length of $N$ samples is used to get the embedded stata space matrix,
+with a length of $N$ samples is used to get the embedded state space matrix,
 $\boldsymbol{E} a_{x}$, with $m$ rows and $N-(m-1)\tau$ columns.
 Finally, PCA is applied to reduce de dimensionality of the data
-to get the first two componets of the rotated data in order
+to get the first two components of the rotated data in order
 to reconstruct the state space.
 
 
@@ -261,9 +261,9 @@ Estimating head pose in human-robot interactions is an active area of research
 where challenges like real-time tracking, the use of less invasive equipment
 or the preparation of calibration techniques remain to be solved.
 However, Lemaignan et al. \cite{Lemaignan2016} proposed a head pose estimator
-using a monococular RGB webcam which is able to track a head with rotations up
+using a monocular RGB webcam which is able to track a head with rotations up
 to $\pm$40$^{\circ}$ horizontally and $\pm$30$^{\circ}$ vertically.
-Much recently, OpenFace, a fully open source real-time facial behavior analysis,
+Much recently, OpenFace, a fully open source real-time facial behaviour analysis,
 non only provides head pose (orientation and motion) but also state-of-the-art
 performance in facial landmark motion, facial expressions, and eye gaze \cite{Baltrusaitis2016}.
 We therefore select the use of OpenFace because it can operate with a simple webcam
@@ -273,23 +273,23 @@ in real-time (Figure~\ref{fig:exp}B).
 
 \section{Experiment}
 
-\subsection{Hyphothesis}
+\subsection{Hypothesis}
 In our previous experiments of a face-to-face human-humanoid imitation
 activity \cite{XXX2017}, we applied the State Space Reconstruction's Theorem
-to quantify the level of imitation for horizonal and vertical upper arm movements.
+to quantify the level of imitation for horizontal and vertical upper arm movements.
 In such experiment, we observed in the recorded videos (only by naked eye)
-that the effects like boredoom, fatigue or level of engagment play an important
+that the effects like boredom, fatigue or level of engagement play an important
 role in the influence that each persons moves.
-With this in mind, we hyphothesised that not only the inertial sensors attached
+With this in mind, we hypothesised that not only the inertial sensors attached
 to the body can provide information about movement variability but also the
 face expressions and head pose estimation which, we believe, will lead us
 to get better understanding of the movement variability in human-to-humanoid
-activities and therefore create more realiable metrics to quantify such variability.
+activities and therefore create more reliable metrics to quantify such variability.
 
 
 \subsection{Participants and Procedure}
-To test our hyphothesis, we collected data from eigthteen healthy participants:
-eigth male participant (age 18 $\pm$ 3.43) and ten female (age 18 $\pm$ 0.43)
+To test our hypothesis, we collected data from eighteen healthy participants:
+eight male participant (age 18 $\pm$ 3.43) and ten female (age 18 $\pm$ 0.43)
 in which inertial sensors were attached to the wrist of both the participant and the
 humanoid robot, and put the webcam in front of the participant for the head pose
 estimation (Figure~\ref{fig:exp}A).
@@ -298,7 +298,7 @@ performed by NAO  at a constant speed of 30 frames per seconds.
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.45\textwidth]{figures/experiment/fig_w619h233}
-\caption[PA]{A. Experimental setup: face-to-face imitation with NAO humanoid robot;
+\caption[PA]{A. Experimental set-up: face-to-face imitation with NAO humanoid robot;
 B. Head pose estimation with OpenFace \cite{Baltrusaitis2016} }
 \label{fig:exp}
 \end{figure}
@@ -306,7 +306,7 @@ B. Head pose estimation with OpenFace \cite{Baltrusaitis2016} }
 
 \section{Results}
 In Figure~\ref{fig:main}A), we only presented time series for the participant 12
-for the sensor 03 and sensor 04 to show the assimetry of the signals which is
+for the sensor 03 and sensor 04 to show the asymmetry of the signals which is
 reflected in p12-s03 and p12-s04 in (Figure~\ref{fig:main}B) as well as in the
 error plot for s03 and s04 (Figure~\ref{fig:main}C). On the other hand,
 you can also notice that p17 in the error plot (Figure~\ref{fig:main}C)
@@ -337,10 +337,10 @@ data from human-humanoid imitation activity, several questions remain
 to be investigated like the understanding of emotions and motions
 in one-to-one or one-to-many human-humanoid interactions.
 Considering the head pose estimation and the outcomes of the proposed metric,
-we observed that p04 and p17 particants moved their head as a tendency for
-the arm momvement given the fact that the robot's head was static in the
+we observed that p04 and p17 participants moved their head as a tendency for
+the arm movement given the fact that the robot's head was static in the
 activity.
-Such behavior requires further investigation in which, we believe that,
+Such behaviour requires further investigation in which, we believe that,
 the perception of movement is involved in this human-humanoid interactions.
 As pointed out by Blake et al. \cite{blake2007}, the motor experience affects
 the visual sensitivity of human action.
