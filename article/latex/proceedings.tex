@@ -1,0 +1,418 @@
+\documentclass{sigchi}
+
+% Use this section to set the ACM copyright statement (e.g. for
+% preprints).  Consult the conference website for the camera-ready
+% copyright statement.
+
+% Copyright
+\CopyrightYear{2017}
+%\setcopyright{acmcopyright}
+\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+% DOI
+\doi{http://dx.doi.org/10.475/123_4}
+% ISBN
+\isbn{123-4567-24-567/08/06}
+%Conference
+\conferenceinfo{HAI'17,}{October 17--20, 2016, Bielefeld, Germany}
+%Price
+\acmPrice{\$15.00}
+
+% Use this command to override the default ACM copyright statement
+% (e.g. for preprints).  Consult the conference website for the
+% camera-ready copyright statement.
+
+%% HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP --
+%% Please note you need to make sure the copy for your specific
+%% license is used here!
+% \toappear{
+% Permission to make digital or hard copies of all or part of this work
+% for personal or classroom use is granted without fee provided that
+% copies are not made or distributed for profit or commercial advantage
+% and that copies bear this notice and the full citation on the first
+% page. Copyrights for components of this work owned by others than ACM
+% must be honored. Abstracting with credit is permitted. To copy
+% otherwise, or republish, to post on servers or to redistribute to
+% lists, requires prior specific permission and/or a fee. Request
+% permissions from \href{mailto:Permissions@acm.org}{Permissions@acm.org}. \\
+% \emph{CHI '16},  May 07--12, 2016, San Jose, CA, USA \\
+% ACM xxx-x-xxxx-xxxx-x/xx/xx\ldots \$15.00 \\
+% DOI: \url{http://dx.doi.org/xx.xxxx/xxxxxxx.xxxxxxx}
+% }
+
+% Arabic page numbers for submission.  Remove this line to eliminate
+% page numbers for the camera ready copy
+% \pagenumbering{arabic}
+
+% Load basic packages
+\usepackage{balance}       % to better equalize the last page
+\usepackage{graphics}      % for EPS, load graphicx instead
+\usepackage[T1]{fontenc}   % for umlauts and other diaeresis
+\usepackage{txfonts}
+\usepackage{mathptmx}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{textcomp}
+
+% Some optional stuff you might like/need.
+\usepackage{microtype}        % Improved Tracking and Kerning
+% \usepackage[all]{hypcap}    % Fixes bug in hyperref caption linking
+\usepackage{ccicons}          % Cite your images correctly!
+% \usepackage[utf8]{inputenc} % for a UTF8 editor only
+
+% If you want to use todo notes, marginpars etc. during creation of
+% your draft document, you have to enable the "chi_draft" option for
+% the document class. To do this, change the very first line to:
+% "\documentclass[chi_draft]{sigchi}". You can then place todo notes
+% by using the "\todo{...}"  command. Make sure to disable the draft
+% option again before submitting your final document.
+\usepackage{todonotes}
+
+% Paper metadata (use plain text, for PDF inclusion and later
+% re-using, if desired).  Use \emtpyauthor when submitting for review
+% so you remain anonymous.
+% \def\plaintitle{SIGCHI Conference Proceedings Format}
+\def\plaintitle{Towards the Analysis of Movement Variability in Human-Humanoid Imitation Activities}
+
+\def\plainauthor{First Author, Second Author, Third Author,
+  Fourth Author, Fifth Author, Sixth Author}
+\def\emptyauthor{}
+\def\plainkeywords{Authors' choice; of terms; separated; by
+  semicolons; include commas, within terms only; required.}
+\def\plaingeneralterms{Documentation, Standardization}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+%  pdfauthor={\plainauthor},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  pdfdisplaydoctitle=true, % For Accessibility
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+  hypertexnames=false
+}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{\plaintitle}
+
+\numberofauthors{3}
+\author{%
+  \alignauthor{Leave Authors Anonymous\\
+    \affaddr{for Submission}\\
+    \affaddr{City, Country}\\
+    \email{e-mail address}}\\
+  \alignauthor{Leave Authors Anonymous\\
+    \affaddr{for Submission}\\
+    \affaddr{City, Country}\\
+    \email{e-mail address}}\\
+  \alignauthor{Leave Authors Anonymous\\
+    \affaddr{for Submission}\\
+    \affaddr{City, Country}\\
+    \email{e-mail address}}\\
+}
+
+\maketitle
+
+\begin{abstract}
+  In this paper, we present prelimary results to quantify one-to-one
+  human-humanoid imitation activities using state space reconstruction's theorem.
+  For which data was collected with inertial sensors attached to persons
+  and the use of the OpenFace framework for head pose estimation.
+  Troght the prosed metric, we found that were moving their arms
+  asymetrically while the other move symetrically within a range of movement.
+  Althought the work is in its early stage, the applications can be
+  in rehabilitation, sport science, enternatiment or education.
+\end{abstract}
+
+\category{I.2.9.}{Robotics}{Sensors}
+\category{G.3.}{PROBABILITY AND STATISTICS}{Time series analysis}
+% \category{I.5.4.}{Applications}{Signal Progessing}
+
+% \keywords{\plainkeywords}
+\keywords{Human-Robot Interaction; Human-Humanoid Imitation;
+Wearable Inertial Sensors; State Space Reconstruction}
+
+
+\section{Introduction}
+
+Movement variability is an inherent feature within a person and between persons
+\cite{newell1993variability}. Recently, Herzfeld et al. \cite{Herzfeld2014}
+conducted experiments to state that movement variability is not only noise but a
+source of movement exploration which at certaing point of the exploration
+such variability is a source of movement explotation.
+With this in mind, we have found that there is little research in the area of
+human-robot interaction that is focused on the quantification of movemennt variablity.
+
+
+% Implied Dynamics Biases the Visual Perception of Velocity \cite{LaScaleia2014}.
+% Attention to body-parts varies with visual preference and verb--effector associations \cite{Boyer2017}.
+% Comparing Biological Motion Perception in Two Distinct Human Societies \cite{Pica2011}
+% % Motion perception: from phi to omega \cite{Rose967}
+
+\section{METHOD}
+
+\subsection{State Space Reconstruction}
+In this work we follow the notation employed in \cite{Uzal2011}.
+The purpose of time-delay embedding, also known as Takens's Theorem,
+is to reconstruct the topological properties of an unknown $M-$dimensional
+state space $s(t)$ from a $1-$dimensional measurement $x(t)$ in order to
+reconstruct an $N-$dimensional embedding space (Figure \ref{fig:takens_theorem}).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.45\textwidth]{figures/reconstructed_state_space/fig}
+\caption[PA]{A. $M-$dimensional state space $s(t)$; B. $1-$dimensional measurament
+time series $x(t)$; and  C. $N-$dimensional reconstructed state space $v(t)$ where $M \geq N$
+\cite{QuintanaDuque2012}.}
+\label{fig:takens_theorem}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The time-delay embedding assumes that the time series is a sequence $x(t)=h(s(t))$,
+where $h: S \rightarrow \mathbb{R}^M$ is a measurement function on the unknown
+dynamical system, being $x(t)$ observable.
+Thus, the time delay reconstruction in $m$ dimensions with a time delay
+$\tau$ is defined as: $\overline{x}(t) = (x(t), x(t-\tau),...,x(t-(m-1)\tau))$.
+Then a further transformation is considered in order to reduce
+the dimensionality of the $m-$dimensional reconstructed state space.
+For this work, we assume that the signal, $x(t)$, is produced by some time-varying
+system in our case is the time series produced by the linear acceleration of
+the inertial sensors attached to both the person and the humanoid robot.
+The assumption that the signal exhibits systematic variability within and between
+persons leads to the assumption that this signal should, over some time period,
+exhibit a repeated pattern between and within persons. What we do not know is
+how realiable the quantification methods for movement variability are and how
+to establish levels of imitation with a given movement variability.
+
+
+
+\subsection{Determining the embedding parameters ($m$ and $\tau$)}
+Although Takens's Theorem has been used extensively in gait
+recognition and walking, running and cycling activities \cite{Sama2013},
+the computation of the minimal embedding parameters largely depend on the
+structure (amplitude, frequency, nonlinearity) of the time series.
+For this work, we compute the minimal embedding parameters
+using the Cao's algorithm \cite{Cao1997} and the mutual information and then
+we increase manually the dimensionality until the attractor are untangled
+
+
+\section{Experiment Design}
+
+\subsection{Head Pose Estimation}
+
+Estimating head pose in human-robot interactions is an active area of research
+where challenges like real-time tracking, the use of less invasive equipment
+or the preparation of calibration techniques remain to be solved.
+However, Lemaignan et al. proposed a head pose estimator
+using a monococular RGB webcam which is able to track a head with rotations up
+to $\pm$40$^{\circ}$ horizontally and $\pm$30$^{\circ}$ vertically \cite{Lemaignan2016}.
+Much recently, OpenFace, a fully open source real-time facial behavior analysis,
+provides a state-of-the-art performance in facial landmark motion,
+head pose (orientation and motion), facial expressions, and eye gaze.
+Additionally, OpenFace can operate with a simple webcam in real-time \cite{Baltrusaitis2016}
+which is ideal for our experiments.
+
+
+% \subsection{Head Pose Estimation}
+% We use OpenFace \cite{Baltrusaitis2016} to measure the head pose which
+%  let us hyphothesis that the participant is engagaed
+% when he/she stared the robots within certain range of movements.
+%
+
+\subsection{Measuring Movement}
+To understand the movement of the participants, we select a very cheap
+Inertial Measurement Unit: SparkFun 9DOF RAZOR IMU SEN-10736 sensor board
+which transmit data via RN42 bluetooth module. We set a sampling rate of 50 Hz
+to collecte data from four RAZOR IMUS  connected throught ROS \cite{quigley2009}.
+
+
+\subsection{Time Series from the Accelerometer}
+In this work the sequence $x(t)$ is the raw data collected from an (IMU)
+for triaxial data for accelerometer ($a_{ \{ x,y,z \} }$),
+gyroscope ($g_{ \{ x,y,z \} }$) and magnetometer($m_{ \{ x,y,z \} }$) sensors.
+Then, for instance, the time-series $a_x$ with a length of
+$N$ samples is used to obtain the Time-delay embedded matrix,
+$\boldsymbol{E} a_{x}$, with $m$ rows and $N-(m-1)\tau$ columns.
+Finally, the PCA algorithm is applied so as to obtain via eigenvalues
+($\lambda_1,\ldots,\lambda_m$) and eigenvectors ($v_1,\ldots,v_m$)
+the principal components ($PC_1,\ldots,PC_m$) of the time-delay embedded phase space.
+
+\section{Experiment}
+
+\subsection{Hyphothesis}
+In our previous experiments of a face-to-face human-humanoid imitation
+activity \cite{XXX2017}, we proposed a metric to quantify the level of
+imitation for horizonal and vertical upper arm movements. In such experiment,
+we also observed (only by naked eye) that the efects like boredoom,
+fatigue or level of engagment play an important role in the influence that each
+persons moves.
+With this in mind, we hyphothesised that not only inertial sensors attached
+to the body can provide information about movement variability
+but also the head pose estimation which, we believe, will lead us to get
+better understanding of the movement variability and therefore create
+more realiable metrics to quantify such variability.
+
+
+\subsection{Participants and Procedure}
+In this experiment, we collected data from eigthteen healthy participants:
+eigth male participant (age 18 $\pm$ 3.43) and ten female (age 18 $\pm$ 0.43).
+Besides the inertial sensors attached to the wrist of both the participant and the robot,
+we use the head pose estimation via webcam from OpenFace framwork in order to
+test our previous hyphothesis.
+For this, we designed an experiment where the participant imitates
+NAO robot' arm movements at a constant speed of 30 frames per seconds.
+Such NAO's arm movements were performed for ten times which were imitated
+in a face-to-face imitation activity (Figure~\ref{fig:exp}A ).
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.45\textwidth]{figures/experiment/fig_w619h233}
+\caption[PA]{A. Experimental setup: face-to-face imitation with NAO humanoid robot;
+B. Head pose estimation with OpenFace \cite{Baltrusaitis2016}
+}
+\label{fig:exp}
+\end{figure}
+
+
+
+
+
+
+\section{Results}
+
+In Figure~\ref{fig:pose}, we can observe that particpant 04, 08 and 17
+present an oscillation in the head which is an unpected behaviour since
+NAO was static.
+
+\begin{figure*}[!htb]
+\centering
+\includegraphics[width=1.00\textwidth]{figures/results/main/figv01}
+\caption[PA]{Head Pose Estimation in the Tx axis for 18 participants}
+\label{fig:pose}
+\end{figure*}
+
+
+
+
+
+\section{Conclusion}
+
+Althought the robot's head was static, we observed that p04 and p17
+particants moved their head as a tendency for the arm momvement to which
+we believe that such behavior requires further investigation where
+the perception of movement is involved. As posed by Blake et at.
+\cite{blake2007}, motor experience of affect the visual sensitivity
+to human action.
+
+
+
+
+% Understading the perceptual, motoric, affective and neural mechanisms
+% of perception of human motion has been
+% which is the ability of
+% Perception of Human Motion \cite{blake2007}.
+
+
+
+Having proposed and analysed the data from human-humanoid imitation activity,
+several questions remain to be investigated to understand emotions and motions
+ in one-to-one or one-to-many human-humanoid interactions.
+
+In future experiments, there are three areas that we intend to investigate:
+(a) provide further understanding of human movement variablity
+(b) perform experiments of interaction with two-humans to one-humanoid and
+ three-humans to one-humanoid interactions.
+(c) exploration of complex movements which can be performed by both persons and NAO;
+(d) data collection from a wider range of individuals (differing gender, age and state of health)
+ and from additional inertial sensors attached to the body.
+
+
+
+
+
+
+\section{Acknowledgments}
+
+XXX gratefully acknowledges XXX for funding his doctoral studies at
+University of XXX. Special thanks is also extended to XXX from XXX at
+University of XXX for XXX
+acute critics and suitable comments that are helping the work to give a better
+shape to the scientific value of knowledge of my research endevours.
+
+
+% Balancing columns in a ref list is a bit of a pain because you
+% either use a hack like flushend or balance, or manually insert
+% a column break.  http://www.tex.ac.uk/cgi-bin/texfaq2html?label=balance
+% multicols doesn't work because we're already in two-column mode,
+% and flushend isn't awesome, so I choose balance.  See this
+% for more info: http://cs.brown.edu/system/software/latex/doc/balance.pdf
+%
+% Note that in a perfect world balance wants to be in the first
+% column of the last page.
+%
+% If balance doesn't work for you, you can remove that and
+% hard-code a column break into the bbl file right before you
+% submit:
+%
+% http://stackoverflow.com/questions/2149854/how-to-manually-equalize-columns-
+% in-an-ieee-paper-if-using-bibtex
+%
+% Or, just remove \balance and give up on balancing the last page.
+%
+% \balance{}
+
+
+% BALANCE COLUMNS
+\balance{}
+
+% REFERENCES FORMAT
+% References must be the same font size as other body text.
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{references}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
