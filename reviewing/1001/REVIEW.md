@@ -174,22 +174,22 @@ and teh word representation of each row besides the plots.
 # Third Round and Submission of Reviews on XX August 2017
 
 
-The authors propose an approach that is based on simple internal represenations
-for PR2 robot to quyicky learn spacial relationships for objects over a table,
-the approach is very useufl as it can be generalised for tables of different
-dimensions. It is conluded that examplars lexicons are more consistent than grid
+The authors propose an approach that is based on simple internal representations
+for PR2 robot to quickly learn spacial relationships for objects over a table,
+the approach is very useful as it can be generalised for tables of different
+dimensions. It is concluded that exemplars lexicons are more consistent than grid
 lexicons but grid lexicons are much quicker for learning representations
 than examplars lexicons. The paper also provides a well structured format and the literature
-review is vastly enought to pose the importance of the work.
+review is vastly enough to pose the importance of the work.
 These are some of my major and minor comments that can make the paper stronger.
 
 
 ## Major Comments:
 
-* I did a search on gogle schoolar and  techniques for distributed lexicons
+* I did a search on google scholar and  techniques for distributed lexicons
 (Schulz 2012) has been  cited 4 times and (Schulz 2011) 14 times to August 2017.
 I am wondering if those are the state-of-the-art techniques
-for language represnetations and which are the advantanges and limitation of such
+for language representations and which are the advantages and limitation of such
 approaches.
 
 * It would be good for the reader that you mention who propose the confidence
@@ -216,27 +216,27 @@ the meaning of consistency with regard to the number of sections.
 
 * For replication purpose, it is suggested that the authors
 release their source code where you provide further information about the
-machines, the robot, Linux and ROS distrutions.
+machines, the robot, Linux and ROS distributions.
 
 * The order of "the environment, the robot, the interactions, language
 representations, and lexicon evaluation" is different than the one which
 is presented in the SYSTEM section.
 
-* The following sentece would better with a parallel structure:
+* The following sentence would better with a parallel structure:
 "an average of 29 seconds to complete, compared to an average of 3 minutes and
-  30 seconds for the grid condition compared to an avarage of ?? ??."
+  30 seconds for the grid condition compared to an average of ?? ??."
 
 * for the Figure 2 and 3, authors might add some description above the
 plots to get the robot's examplar easily; also some labels to the grid lexicon
 and the word representation would be helpful.
 
-* Can you specify how many years? one decate? two decates?
+* Can you specify how many years? one decade? two decades?
 In "Robots have been learning language for many years, either
 from each other or from humans"
 
 * Can you include a human in Figure 1? It would also be nice to include the objects.
 
-* I am not sure how helpfull is to mention the dimension of the chair as well
+* I am not sure how helpful is to mention the dimension of the chair as well
 and the separation between the table,.
 
 * You use tabletop or table-top. stick to one word!

@@ -134,10 +134,10 @@ The paper has a good organisation however the methodology, labbeling figure and
 ## Major Comments
 
 
-* Your cited work should available in case the readers wnat to go further exploration,
-in a quick search of triadic interaction in google schoolar I found papers where
+* Your cited work should available in case the readers want to go further exploration,
+in a quick search of triadic interaction in google scholar I found papers where
 you can get a better idea of what has been done regarding this topic. Read the most
-cited papers, I believe that they have sth to say.
+cited papers.
 
 The following cited work is not available in google scholar,
 * Studies on collaborative play and
@@ -146,10 +146,7 @@ communications mediated by panel-type robots INAMO)
 * Development of a game playing method for a two persons
 game using marble gathering tasks.
 
-* Origin and development of social information gathering behavior
-
-
-
+* Origin and development of social information gathering behaviour
 
 
 
@@ -158,17 +155,17 @@ game using marble gathering tasks.
 
 
 The authors posed an interesting Human-Robot Interaction problem
-where INAMO, a japansese swarm robot, is used as third party to test the
+where INAMO, a Japanese swarm robot, is used as third party to test the
 communications models to test where intentions and feelings between two
-persons lead to the increase of pleasure and alliviate frustrations.
-The paper has a good organisation however the methodology, labbeling figure and
+persons lead to the increase of pleasure and alleviate frustrations.
+The paper has a good organisation however the methodology, labelling figure and
 mainly the use of English language requires major improvements.
 
 
 ## Comments
 
 * Your cited work should available in case the readers want to go further exploration,
-in a quick search of triadic interaction in google schoolar I found papers where
+in a quick search of triadic interaction in google scholar I found papers where
 you can get a better idea of what has been done regarding your topic of interest.
 You can read the most cited papers to which I believe you will get a better idea
 of what has been done.
@@ -180,31 +177,31 @@ communications mediated by panel-type robots INAMO)
 -- Development of a game playing method for a two persons
 game using marble gathering tasks.
 
--- Origin and development of social information gathering behavior
+-- Origin and development of social information gathering behaviour
 
 
 
 * The abstract can be improved as it does not summarise the main findings of the paper
-The paper made a good point about the experiment that perhabs can be used in the
+The paper made a good point about the experiment that perhaps can be used in the
 abstract.
 
 
 
 * The labelling in figure 1 is a bit far from each of the INAMOS, it might also
-be useful that you explain the meaning of the whell inside the red circle which
+be useful that you explain the meaning of the well inside the red circle which
 it has also got a stop line.
 
 * No need to add (e.g. [5]), it read better with only citing  [5].
 
-* Can you descrive what is an apex?
+* Can you describe what is an apex?
 
 * Typos:
-"dyadic" shoiuld it be didactic?,  "person-person or person-object" would read better as "person-to-person person-to-object"
+"dyadic" should not be didactic?,  "person-person or person-object" would read better as "person-to-person person-to-object"
 
-* Figure 3. "Figures depicts an image."  the caption is reduntant here. You might
+* Figure 3. "Figures depicts an image."  the caption is redundant here. You might
 get some inspiration of other papers to learn about the way they describe a figure.
-Also the order is a bit confusing, it can be more understadable if you use
-(a) description; (b) desciption and (c) description.
+Also the order is a bit confusing, it can be more understandable if you use
+(a) description; (b) description and (c) description.
 
 
 * You are redundant by mentioning again the aim of the experiment in the result section.

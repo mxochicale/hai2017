@@ -184,14 +184,14 @@ at page 3 above the Figure 2.
 # Third Round and Submission of Reviews on XX August 2017
 
 The authors conducted an experiment of a minimal modal interaction with a 1-DOF stick
-to assess behaviors that can be attributed either to malice or to benevolence.
-With this in mind, twenty-five participanmts were asked to pulling or spitting out
+to assess behaviours that can be attributed either to malice or to benevolence.
+With this in mind, twenty-five participants were asked to pulling or spitting out
 sticks of a hole in two phases:
 (i) where pulling in means cooperative and spitting out means obstructive, and;
-(ii) where pulling means obstructive and sippoint out means cooperative.
+(ii) where pulling means obstructive and spitting out means cooperative.
 Authors used a 7-point Likert scale questions with one-way ANOVA to test the
-prediction of behaviors.
-These are some comments that authors can take into considerating to make a
+prediction of behaviours.
+These are some comments that authors can take into consideration to make a
 stronger paper.
 
 
@@ -206,8 +206,8 @@ of multiple relationships between sensory inputs and motor outputs.
 
 * Mind, its a very abstract term that it is a bit hard to grasp it
 in the context of your paper. If you refer to the brain when you said mind,
-your stataments in the introduction about the abstraction of the mind with
-the use of PCA is certainly very limited. Mind, or the brain, has certaingly
+your statements in the introduction about the abstraction of the mind with
+the use of PCA is certainly very limited. Mind, or the brain, has certainly
 got many lines of research to which, you should be more specific
 and more carefully when you refer to the mind.
 
@@ -224,9 +224,8 @@ In such a context,
 one should rapidly differentiate competitors from cooperators
 and avoid useless battles against competitors"
 (2) "In the present study, we conducted an experiment to assess
-whether human predict future behavior of an agent (a 1-DOF
-stick) in a different situation by attributing malice or benevo-
-lence.
+whether human predict future behaviour of an agent (a 1-DOF
+stick) in a different situation by attributing malice or benevolence.
 We developed a stick-mediated interactive hole which
 provides minimum modal interaction in a non-zero-sum game
 situation."
@@ -246,7 +245,7 @@ that can be useful for the community of HAI.
 a better argument for the values of the chi-square test.
 
 * "All were ignorant of the purpose of the experiment." to be ignorant is a bit
-derogative. You might said, "particpants were not informed about the..."
+derogative. You might said, "participants were not informed about the..."
 
 * For the figure 1. it would be nice if you describe each of the devices in the
 1-d stick. It would also be helpful if you add a photo of one person interacting
@@ -256,6 +255,6 @@ with the interactive hole.
 
 * "Gifu University in Japan" the paper should be anonymalised.
 
-* Add a COCLUSION section
+* Add a CONCLUSION section
 
 * Add a paragraph for the ACKNOWLEDGMENTS section.

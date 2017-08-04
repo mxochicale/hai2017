@@ -27,4 +27,5 @@ a draft version of the review.
   flagging the mislabeling in a Figure, mispelling
 
 Finally, polish the review and submit it.
-Give a final round of review before submitting it.
+Give a final round to check the spelling and to fix extra errors
+review before submitting it.
