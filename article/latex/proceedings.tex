@@ -205,10 +205,11 @@ unknown $M-$dimensional state space $s(t)$ from a $1-$dimensional measurement
 $x(t)$ in order to reconstruct an $N-$dimensional embedding space
 (Figure \ref{fig:takens_theorem}).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!htb]
+% \begin{figure}[!htb]
+\begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{figures/reconstructed_state_space/fig}
-\caption[PA]{A. $M-$dimensional state space $s(t)$; B. $1-$dimensional measurement
+\caption[PA]{State Space Reconstruction. A. $M-$dimensional state space $s(t)$; B. $1-$dimensional measurement
 time-series $x(t)$; and  C. $N-$dimensional reconstructed state space $v(t)$
 where $M \geq N$ (adapted from \cite{QuintanaDuque2012}).}
 \label{fig:takens_theorem}
@@ -297,16 +298,29 @@ eight male participant (age 18 $\pm$ 3.43) and ten female (age 18 $\pm$ 0.43)
 in which inertial sensors were attached to the wrist of both the participant and the
 humanoid robot, and put the webcam in front of the participant for the head pose
 estimation (Figure~\ref{fig:exp}A).
-In the experiment, participant were asked to imitate ten upper arm movements
-performed by NAO  at a constant speed of 30 frames per seconds.
-\begin{figure}[!htb]
+In the experiment, participant were asked to imitate NAO's upper arm movements
+as shown in Figure~\ref{fig:exp}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{figure}[!htb]
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/nao/fig3A}
+\caption[PA]{NAO's arm movements}
+\label{fig:exp}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{figure}[!htb]
+\begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{figures/experiment/fig_w619h233}
 \caption[PA]{A. Experimental set-up: face-to-face imitation with NAO humanoid robot;
 B. Head pose estimation with OpenFace \cite{Baltrusaitis2016} }
 \label{fig:exp}
 \end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Results}
 In Figure~\ref{fig:main}A, we only presented time-series for the participant 12
