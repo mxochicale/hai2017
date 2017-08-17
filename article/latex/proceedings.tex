@@ -204,17 +204,18 @@ time-delay embedding, is to reconstruct the topological properties of an
 unknown $M-$dimensional state space $s(t)$ from a $1-$dimensional measurement
 $x(t)$ in order to reconstruct an $N-$dimensional embedding space
 (Figure \ref{fig:takens_theorem}).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%---------------------------------(FIGURE)-------------------------------------
 % \begin{figure}[!htb]
 \begin{figure}
 \centering
-\includegraphics[width=0.45\textwidth]{figures/reconstructed_state_space/fig}
-\caption[PA]{State Space Reconstruction. A. $M-$dimensional state space $s(t)$; B. $1-$dimensional measurement
-time-series $x(t)$; and  C. $N-$dimensional reconstructed state space $v(t)$
+\includegraphics[width=0.45\textwidth]{figures/reconstructed_state_space/fig_v01}
+\caption[PA]{State Space Reconstruction. A. $M-$dimensional state space $s(t)$;
+B. $1-$dimensional measurement time-series $x(t)$; and
+C. $N-$dimensional reconstructed state space $v(t)$
 where $M \geq N$ (adapted from \cite{QuintanaDuque2012}).}
 \label{fig:takens_theorem}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%---------------------------------(FIGURE)-------------------------------------
 The time-delay embedding assumes that the time-series is a sequence $x(t)=h(s(t))$,
 where $h: S \rightarrow \mathbb{R}^M$ is a measurement function on the unknown
 dynamical system, being $x(t)$ observable.
@@ -299,29 +300,27 @@ in which inertial sensors were attached to the wrist of both the participant and
 humanoid robot, and put the webcam in front of the participant for the head pose
 estimation (Figure~\ref{fig:exp}A).
 In the experiment, participant were asked to imitate NAO's upper arm movements
-as shown in Figure~\ref{fig:exp}.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+with ten repetitions (Figure~\ref{fig:nao}).
+%%---------------------------------(FIGURE)-------------------------------------
 % \begin{figure}[!htb]
 \begin{figure}
 \centering
-\includegraphics[width=0.45\textwidth]{figures/nao/fig3A}
-\caption[PA]{NAO's arm movements}
-\label{fig:exp}
+\includegraphics[width=0.45\textwidth]{figures/nao/arm_movements/fignao}
+\caption[PA]{NAO's arm movements. A. Moving arms from right to left;
+B. Moving arms from left to right.  }
+\label{fig:nao}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%---------------------------------(FIGURE)-------------------------------------
+%%---------------------------------(FIGURE)-------------------------------------
 % \begin{figure}[!htb]
 \begin{figure}
 \centering
-\includegraphics[width=0.45\textwidth]{figures/experiment/fig_w619h233}
+\includegraphics[width=0.45\textwidth]{figures/experiment/fig_w619h233_v2}
 \caption[PA]{A. Experimental set-up: face-to-face imitation with NAO humanoid robot;
 B. Head pose estimation with OpenFace \cite{Baltrusaitis2016} }
 \label{fig:exp}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%---------------------------------(FIGURE)-------------------------------------
 \section{Results}
 In Figure~\ref{fig:main}A, we only presented time-series for the participant 12
 for the sensors attached to the right and left wrist (red and blue).

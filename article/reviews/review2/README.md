@@ -1,4 +1,4 @@
------------------------- Submission 1024, Review 2 ------------------------
+  ------------------------ Submission 1024, Review 2 ------------------------
 
 Title: Towards the Analysis of Movement Variability in Human-Humanoid Imitation Activities
 
