@@ -267,7 +267,7 @@ setwd(results_path)
 #################
 # Plots Features
 sensortag <- 'plot'
-plotlinewidtg <- 1
+plotlinewidtg <- 2
 image_width <- 1208
 image_height <- 2480
 image_dpi <- 300
@@ -282,7 +282,7 @@ image_bg <- "transparent"
 
 ## Pose estimation with respect to the camera
 Plot <- ggplot(dataTable)+
-  geom_line( aes(x=frame,y=SGcpose_Tx, color='blue'), size=plotlinewidtg)+
+  geom_line( aes(x=frame,y=SGcpose_Tx, color='blue'), size=plotlinewidtg, alpha=0.75)+
   scale_color_manual(labels = c("Tx"), values = c("blue")) +
   # coord_cartesian(xlim=NULL, ylim=c(-100,100))+
   coord_cartesian(xlim=NULL, ylim=c(-4,4))+

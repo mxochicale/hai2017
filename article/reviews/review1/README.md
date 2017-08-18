@@ -43,3 +43,11 @@ The Review
    In the experiment, participant
    were asked to imitate ten upper arm movements performed by
    NAO at a constant speed of 30 frames per seconds.
+
+
+
+## Firs Review
+I tackle each of the request for the Reviewer 1 as well as
+some modifications with the results figures, the abstract and some typos.
+I also extend the experiment section and fused with experiment design and
+rename some of the subsections.
