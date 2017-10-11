@@ -41,7 +41,7 @@ setcolorder(lspace, c(5,1:4))
 # # Plotting State Spaces
 #
 
-png(filename="A.png",
+png(filename="Ab.png",
   type="cairo",
   width = 1000, height = 1000, units = "px",
   pointsize=25,
@@ -54,11 +54,15 @@ png(filename="A.png",
         #
 
 scatter3D(
-  lspace$x, lspace$y, lspace$z, colvar = lspace$t, bty = "u", type = "l", lwd=12,
-	axis.scales = TRUE,
-	# xlim=c(-1,1),ylim= c(-1,1),zlim=c(-10,30),
+  lspace$x, lspace$y, lspace$z, 
+  colvar = lspace$t, 
+  bty = "u", type = "l", 
+  lwd=12,
+  axis.scales = FALSE,
+  #xlim=c(-1,1),ylim= c(-1,1),zlim=c(-10,30),
   main = "",
-  xlab = 's1', ylab ='s2', zlab = 's3',
+  #xlab = 's1', ylab ='s2', zlab = 's3',
+  xlab = '', ylab ='', zlab = '',
   # colkey = list(length = 0.3, width = 0.8, cex.clab = 0.75)
   colkey = FALSE
   )
